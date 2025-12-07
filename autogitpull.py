@@ -14,14 +14,13 @@ log_file = "./git_pull.log"  # log file path
 def log(message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     full_message = f"[{timestamp}] {message}"
-    # print(full_message)
-    with open(log_file, "a") as f:
-        f.write(full_message + "\n")
+    print(full_message)
+    # with open(log_file, "a") as f:
+    #     f.write(full_message + "\n")
 
 # ===== MAIN LOOP =====
 os.chdir(repo_path)
 log("Git pull watcher started.")
-print("Git pull watcher started.")
 
 while True:
     try:
