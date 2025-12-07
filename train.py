@@ -19,8 +19,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 
 # Hyperparameters
-batch_size = 64
-num_epochs = 100
+batch_size = 16
+num_epochs = 50
 learning_rate = 1e-4
 image_size = 256  # Use 256x256 for better VAE compatibility
 latent_channels = 4
