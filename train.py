@@ -70,9 +70,9 @@ unet = UNet2DModel(
     layers_per_block=2,
     block_out_channels=(128, 128, 256, 256, 512, 512),
     down_block_types=(
-        "CrossAttnDownBlock2D",
-        "CrossAttnDownBlock2D",
-        "CrossAttnDownBlock2D",
+        "DownBlock2D",
+        "DownBlock2D",
+        "DownBlock2D",
         "DownBlock2D",
         "DownBlock2D",
         "DownBlock2D",
@@ -81,9 +81,9 @@ unet = UNet2DModel(
         "UpBlock2D",
         "UpBlock2D",
         "UpBlock2D",
-        "CrossAttnUpBlock2D",
-        "CrossAttnUpBlock2D",
-        "CrossAttnUpBlock2D",
+        "UpBlock2D",
+        "UpBlock2D",
+        "UpBlock2D",
     ),
 ).to(device)
 
