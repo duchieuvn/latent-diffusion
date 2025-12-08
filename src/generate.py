@@ -17,7 +17,7 @@ import torchvision.utils as vutils
 def main():
     # --- CONFIGURATION ---
     # Manually set parameters here instead of using the command line.
-    checkpoint_path = "checkpoint_epoch_20.pt"  # REQUIRED: Update this path to your model checkpoint.
+    checkpoint_path = "checkpoint_epoch_30.pt"  # REQUIRED: Update this path to your model checkpoint.
     num_images = 4
     output_dir = "output"
     image_size = 256  # Must match the image_size used during training.

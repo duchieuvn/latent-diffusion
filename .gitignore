@@ -1,3 +1,6 @@
 data/
+output/
+__pycache__/
 *.log
 *.pt
+*.pkl
